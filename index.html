@@ -6,23 +6,51 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="//rawgithub.com/Caged/d3-tip/master/examples/example-styles.css">
+    
     <title>Kobe's Shot Chart</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
+        <div class="left-side">
+            <div class="profile">
+                <img src="https://cdn.hoopshype.com/i/eb/f6/e9/kobe-bryant.png"/>
+                <h1>Kobe Bryant</h1>
+                <h3><strong>Height:</strong>6-6</h3>
+                <h4>6-6</h4>
+                <h3><strong>Weight:</strong></h3>
+                <h4>205</h4>
+                <h3><strong>Date of Birth:</strong></h3>
+                <h4>August 23, 1978</h4>
+                <h3><strong>High School:</strong></h3>
+                <h4>Lower Merion High School</h4>
+            </div>
+            <div class="8vs24"></div>
+        </div>
+        <div class="charts">
             <div id="points"></div>
-            <div id="chart-area"></div>
+            <div id="chart-area">
+                <select id="year-select" class="form-control">
+                    <option id="selected" selected value="all">Select an Option</option>
+                    <option id="selected" value="1/22/06">81-Point Game</option>
+                    <option id="selected" value="4/13/16">Last Game</option>
+                </select>
+            </div>
+        </div>
+        <div id="8vs24">
         </div>
     </div>
 
     <!-- External JS libraries -->
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="js/d3-tip.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
     <!-- Custom JS -->
-    <script src="js/points.js"></script>
-    <script src="js/shots.js"></script>
+    <!-- <script src="js/points.js"></script>
+    <script src="js/shots1.js"></script> -->
+    <script src="js/8vs24.js"></script>
 </body>
 
 </html>
