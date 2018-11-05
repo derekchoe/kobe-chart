@@ -5,16 +5,16 @@
 */
 
 var margin = { left: 80, right: 20, top: 50, bottom: 100 };
-var height = 500 - margin.top - margin.bottom,
-  width = 1500 - margin.left - margin.right;
+var height = 700 - margin.top - margin.bottom,
+  width = 1000 - margin.left - margin.right;
 
-var g = d3.select("#chart-area")
+var g = d3
+  .select("#chart-area")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
   .append("g")
-  .attr("transform", "translate(" + margin.left +
-    ", " + margin.top + ")");
+  .attr("transform", "translate(" + margin.left + ", " + margin.top + ")");
 
 var formattedData;
 
@@ -43,8 +43,8 @@ d3.json("../data/shot_data1.json").then(function (data) {
   // Legend
   const makesOrMisses = ["Make", "Miss"];
   const legend = g.append("g")
-    .attr("transform", "translate(" + (250) +
-      "," + (100) + ")");
+    .attr("transform", "translate(" + (50) +
+      "," + (500) + ")");
 
   makesOrMisses.forEach(function (makeOrMiss, i) {
     const legendRow = legend.append("g")
@@ -127,8 +127,8 @@ function update(data) {
     .on("mouseout", tip.hide)
     .merge(circles)
     .transition(t)
-    .attr("cy", function (d) { return (d.loc_y*1.3); })
-    .attr("cx", function (d) { return (d.loc_x*1.5) + 700 })
-    .attr("opacity", "0.6")
-    .attr("r", 2)
+    .attr("cy", function (d) { return (d.loc_y*2.15); })
+    .attr("cx", function (d) { return (d.loc_x*1.9) + 420 })
+    .attr("opacity", "0.7")
+    .attr("r", 3)
 }

@@ -11,33 +11,38 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="left-side">
-            <div class="profile">
-                <img src="https://cdn.hoopshype.com/i/eb/f6/e9/kobe-bryant.png"/>
-                <h1>Kobe Bryant</h1>
-                <h3><strong>Height:</strong>6-6</h3>
-                <h4>6-6</h4>
-                <h3><strong>Weight:</strong></h3>
-                <h4>205</h4>
-                <h3><strong>Date of Birth:</strong></h3>
-                <h4>August 23, 1978</h4>
-                <h3><strong>High School:</strong></h3>
-                <h4>Lower Merion High School</h4>
+    <div class="wrapper">
+        <!-- <nav class="navbar"> <img src=https://www.nba.com/lakers/sites/lakers/files/styles/logo/public/lakers_logo_500.png?itok=9Uolmp5H"></nav> -->
+        <div class="container-wrapper">
+            <div class="container">
+                <div class="left-side">
+                    <div class="profile">
+                        <img src="https://cdn.hoopshype.com/i/eb/f6/e9/kobe-bryant.png"/>
+                        <h2>Kobe Bryant</h2>
+                        <h3>Career Shot Chart</h3>
+                        <!-- <h4><strong>Height:</strong></h4>
+                        <h5>6-6</h5>
+                        <h4><strong>Weight:</strong></h4>
+                        <h5>205</h5>
+                        <h4><strong>Date of Birth:</strong></h4>
+                        <h5>August 23, 1978</h5>
+                        <h4><strong>High School:</strong></h4>
+                        <h5>Lower Merion High School</h5> -->
+
+                        <select id="year-select" class="form-control">
+                            <option id="selected" selected value="all">Choose an iconic game</option>
+                            <option id="selected" value="1/22/06">81-Point Game</option>
+                            <option id="selected" value="4/13/16">Last Game</option>
+                        </select>
+                    </div>
+                    <div id="oldVsYoung"></div>
+                </div>
+                <div class="charts">
+                    <div id="points"></div>
+                    <div id="chart-area">
+                    </div>
+                </div>
             </div>
-            <div class="8vs24"></div>
-        </div>
-        <div class="charts">
-            <div id="points"></div>
-            <div id="chart-area">
-                <select id="year-select" class="form-control">
-                    <option id="selected" selected value="all">Select an Option</option>
-                    <option id="selected" value="1/22/06">81-Point Game</option>
-                    <option id="selected" value="4/13/16">Last Game</option>
-                </select>
-            </div>
-        </div>
-        <div id="8vs24">
         </div>
     </div>
 
@@ -48,9 +53,9 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 
     <!-- Custom JS -->
-    <!-- <script src="js/points.js"></script>
-    <script src="js/shots1.js"></script> -->
-    <script src="js/8vs24.js"></script>
+    <!-- <script src="js/points.js"></script> -->
+    <script src="js/shots1.js"></script>
+    <!-- <script src="js/8vs24.js"></script> -->
 </body>
 
 </html>

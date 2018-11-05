@@ -1,19 +1,48 @@
-.container{
-  /* background-color: black; */
+
+
+.navbar{
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+}
+.container-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: helvetica;
+  /* color: white; */
 }
 
 .charts{
+  background: url("bball.png") no-repeat;
+  background-size: cover;
+}
+
+.container{
+  background-color: black;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  border: 3px solid #ccc;
+}
+
+.left-side{
+  display: flex;
+  align-content: center;
 }
 
 .profile{
   padding: 5px;
-  border: 1px solid #ccc;
-  width: 25vh;
-  height: 100%;
+  border: 1px solid black;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+
+.chart-area{
+  background-color: black;
 }
 
 #year-select{
@@ -54,6 +83,34 @@
   transition-property:all;
   transition-timing-function:ease-out;
   width:200px;
+}
+
+.pie-row #oldVsYoung .tooltip {
+  position: relative;
+  left: 307px;
+  bottom: 497px;
+  width: 175px;
+  height: 175px;
+  border: 4px solid rgb(219, 219, 219);
+  border-radius: 50%;
+  align-content: center;
+  color: #909090;
+}
+
+.pie-row #oldVsYoung .tooltip .continent {
+  margin-top: 40px;
+  font-size: 1.1em;
+  color: #646464;
+}
+
+.pie-row #oldVsYoung .tooltip .percentage {
+  font-size: 1.1em;
+  color: #646464;
+}
+
+.pie-row #oldVsYoung .tooltip div {
+  margin-left: 1px;
+  height: 30px;
 }
 
 /* #chart-area{

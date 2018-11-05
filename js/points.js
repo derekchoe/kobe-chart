@@ -4,8 +4,8 @@ d3.json("../data/points.json").then((data) => {
   );
   //margins
   const margin = { top: 50, right: 20, bottom: 100, left: 10 };
-  const width = 1000 - margin.left - margin.right;
-  const height = 500 - margin.top - margin.bottom;
+  const width = 700 - margin.left - margin.right;
+  const height = 400 - margin.top - margin.bottom;
 
   const svg = d3.select("#points")
     .append("svg")
@@ -50,7 +50,7 @@ d3.json("../data/points.json").then((data) => {
       .append("rect")
         .attr("y", function(d){return y(d.points);})
         .attr("x", function(d){return x(d.season);})
-        .attr("width", 25)
+        .attr("width", 15)
         .attr("height", function(d){return height-y(d.points)})
         .attr("fill", function(d){
           return "gold";
