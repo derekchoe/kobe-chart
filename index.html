@@ -6,41 +6,36 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="//rawgithub.com/Caged/d3-tip/master/examples/example-styles.css">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <title>Kobe's Shot Chart</title>
 </head>
 
-<body>
-    <div class="wrapper">
-        <!-- <nav class="navbar"> <img src=https://www.nba.com/lakers/sites/lakers/files/styles/logo/public/lakers_logo_500.png?itok=9Uolmp5H"></nav> -->
+<body class="background">
+    <div class="container">
         <div class="container-wrapper">
-            <div class="container">
-                <div class="left-side">
-                    <div class="profile">
-                        <img src="https://cdn.hoopshype.com/i/eb/f6/e9/kobe-bryant.png"/>
-                        <h2>Kobe Bryant</h2>
-                        <h3>Career Shot Chart</h3>
-                        <!-- <h4><strong>Height:</strong></h4>
-                        <h5>6-6</h5>
-                        <h4><strong>Weight:</strong></h4>
-                        <h5>205</h5>
-                        <h4><strong>Date of Birth:</strong></h4>
-                        <h5>August 23, 1978</h5>
-                        <h4><strong>High School:</strong></h4>
-                        <h5>Lower Merion High School</h5> -->
-
+            <div class="left-side-container">
+                <div id=landing-wrapper></div>
+                <div class="profile">
+                    <!-- <img class='laker-logo' src=https://www.nba.com/lakers/sites/lakers/files/styles/logo/public/lakers_logo_500.png?itok=9Uolmp5H"> -->
+                    <p class="profile-name">Kobe Bryant</p>
+                    <p class="profile-info">"My role is to make sure we’re moving in the right direction, getting points, rebounds, steals,
+                        assists and providing
+                        leadership."</p>
+                </div>
+            </div>
+            <div class='right-side-container'>
+            <!-- <div id="oldVsYoung"></div> -->
+            <!-- <div id="points"></div> -->
+                <div class="charts">
+                    <!-- <div> -->
                         <select id="year-select" class="form-control">
                             <option id="selected" selected value="all">Choose an iconic game</option>
                             <option id="selected" value="1/22/06">81-Point Game</option>
                             <option id="selected" value="4/13/16">Last Game</option>
                         </select>
-                    </div>
-                    <div id="oldVsYoung"></div>
-                </div>
-                <div class="charts">
-                    <div id="points"></div>
-                    <div id="chart-area">
-                    </div>
+                    <!-- </div> -->
+                    <div id="chart-area"></div> 
                 </div>
             </div>
         </div>

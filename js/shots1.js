@@ -22,7 +22,6 @@ var formattedData;
 
 
 d3.json("../data/shot_data1.json").then(function (data) {
-  console.log(data);
 
   // Clean data
   formattedData = data.filter(function (shot) {
