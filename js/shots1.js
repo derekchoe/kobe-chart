@@ -17,6 +17,7 @@ const kobeShot = () => {
     .append("g")
     .attr("transform", "translate(" + margin.left + ", " + margin.top + ")");
 
+  // Get data from shot_data1.js
   Object.keys(shotData).map(key => {
     dataset.push(shotData[key])
   });
@@ -40,30 +41,6 @@ const kobeShot = () => {
   
     // Legend
     const makesOrMisses = ["Make", "Miss"];
-    const legend = g.append("g")
-      .attr("transform", "translate(" + (50) +
-        "," + (500) + ")");
-  
-    makesOrMisses.forEach(function (makeOrMiss, i) {
-      const legendRow = legend.append("g")
-        .attr("transform", "translate(0, " + (i * 20) + ")");
-  
-      legendRow
-        .append("rect")
-        .attr("width", 10)
-        .attr("height", 10)
-        .attr("fill", color(makeOrMiss))
-        .attr("color", "#fff");
-  
-      legendRow
-        .append("text")
-        .attr("x", -10)
-        .attr("y", 10)
-        .attr("text-anchor", "end")
-        .style("text-transform", "capitalize")
-        .text(makeOrMiss)
-        .attr("color", "#fff");
-    });
   
     // First run of the visualization
     update(formattedData);
@@ -125,8 +102,8 @@ const kobeShot = () => {
       .on("mouseout", tip.hide)
       .merge(circles)
       .transition(t)
-      .attr("cy", function (d) { return (d.loc_y*1.6); })
-      .attr("cx", function (d) { return (d.loc_x*1.6) + 410 })
+      .attr("cy", function (d) { return (d.loc_y*1.8) + 50 })
+      .attr("cx", function (d) { return (d.loc_x*1.75) + 428 })
       .attr("opacity", "0.7")
       .attr("r", 3)
   }
