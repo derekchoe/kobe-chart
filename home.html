@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//rawgithub.com/Caged/d3-tip/master/examples/example-styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <script type="text/javascript" src="./data/8vs24.js"></script>
+    <script type="text/javascript" src="./data/points.js"></script>
+    <script type="text/javascript" src="./data/shot_data1.js"></script>
+
+    <title>Kobe's Shot Chart</title>
+</head>
+
+<body class="background">
+    <div class="container">
+        <div class="container-wrapper">
+            <div class="left-side-container">
+                <div id=landing-wrapper></div>
+                <select id="year-select" class="form-control">
+                    <option id="selected" selected value="all">Choose an Iconic Game</option>
+                    <option id="selected" value="1/22/06">81-Point Game</option>
+                    <option id="selected" value="4/13/16">Last Game</option>
+                </select>
+                <div class="profile">
+                    <!-- <img class='laker-logo' src=https://www.nba.com/lakers/sites/lakers/files/styles/logo/public/lakers_logo_500.png?itok=9Uolmp5H"> -->
+                    <p class="profile-name">Kobe Bryant</p>
+                    <p class="profile-info">"My role is to make sure we’re moving in the right direction, getting points, rebounds, steals,
+                        assists and providing
+                        leadership."</p>
+                </div>
+            </div>
+            <div class='right-side-container'>
+            <!-- <div id="oldVsYoung"></div> -->
+            <!-- <div id="points"></div> -->
+                <div class="charts">
+                    <div id="chart-area"></div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JS libraries -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="js/d3-tip.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+    <script type="text/javascript" src="./js/shots1.js"></script>
+    <!-- Custom JS -->
+    <!-- <script src="js/points.js"></script> -->
+    <!-- <script src="js/8vs24.js"></script> -->
+</body>
+
+</html>
