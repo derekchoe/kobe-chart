@@ -25,9 +25,9 @@
 
 /* Left Container */
 .left-side-container{
-  width: 25%;
+  min-width: 20vw;
   background: url("kobe.jpg") no-repeat;
-  height: 100%;
+  min-height: 90vh;
   border-radius: 2%;
   display: flex;
   justify-content: center;
@@ -131,7 +131,7 @@
     }
 
 .right-side-container{
-  width: 75%;
+  min-width: 60vw;
   background-color: black;
   height: 100%;
   border-radius: 2%;
@@ -142,6 +142,7 @@
 .charts{
   background: url("bball.png") no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 
