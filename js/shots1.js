@@ -39,9 +39,6 @@ const kobeShot = () => {
       .domain(['Make', "Miss"])
       .range(['Purple', 'Gold']);
   
-    // Legend
-    const makesOrMisses = ["Make", "Miss"];
-  
     // First run of the visualization
     update(formattedData);
   
@@ -77,7 +74,7 @@ const kobeShot = () => {
     
     //filtration of data based on game date
     var data = dataset.filter(function (d) {
-      if (shot == "all") { return true; }
+      if (shot === "all") { return true; }
       else {
         return d.game_date == shot;
       }
