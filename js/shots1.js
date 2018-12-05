@@ -4,10 +4,9 @@
 *    6.5 - Event listeners and handlers in D3
 */
 const kobeShot = () => {
-  console.log('hi')
   var margin = { left: 10, right: 20, top: 50, bottom: 100 };
-  var height = 600 - margin.top - margin.bottom,
-    width = 1000 - margin.left - margin.right;
+  var height = 600 - margin.top - margin.bottom;
+  var width = 995 - margin.left - margin.right;
   let dataset = [];
   var g = d3
     .select("#chart-area")
@@ -76,7 +75,7 @@ const kobeShot = () => {
     var data = dataset.filter(function (d) {
       if (shot === "all") { return true; }
       else {
-        return d.game_date == shot;
+        return d.game_date === shot;
       }
     })
   
@@ -99,8 +98,8 @@ const kobeShot = () => {
       .on("mouseout", tip.hide)
       .merge(circles)
       .transition(t)
-      .attr("cy", function (d) { return (d.loc_y*1.8) + height * 0.1})
-      .attr("cx", function (d) { return (d.loc_x*1.75) + width * 0.44})
+      .attr("cy", function (d) { return (d.loc_y*1.74) + height * 0.1})
+      .attr("cx", function (d) { return (d.loc_x*1.74) + width * 0.44})
       .attr("opacity", "0.7")
       .attr("r", 3)
   }
