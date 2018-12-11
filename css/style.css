@@ -18,10 +18,8 @@
 .container-wrapper{
   min-width: 1150px;
   min-height: 700px;
-  /* min-width: 1000px; */
   background-color: black;
   display: flex;
-  /* border-radius: 2%; */
   box-shadow: 7px 9px 25px 1px rgba(0,0,0,0.74);
 }
 
