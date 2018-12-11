@@ -8,16 +8,16 @@
 
 .container{
   display: flex;
-  min-width: 80vw;
-  min-height: 90vh;
+  min-width: 1150px;
+  min-height: 700px;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
 }
 
 .container-wrapper{
-  min-width: 80vw;
-  min-height: 90vh;
+  min-width: 1150px;
+  min-height: 700px;
   /* min-width: 1000px; */
   background-color: black;
   display: flex;
@@ -27,9 +27,9 @@
 
 /* Left Container */
 .left-side-container{
-  min-width: 20vw;
+  min-width: 300px;
   background: url("kobe.jpg") no-repeat;
-  min-height: 90vh;
+  min-height: 100%;
   border-radius: 2%;
   display: flex;
   justify-content: center;
@@ -37,9 +37,9 @@
 }
 #landing-wrapper {
   display: table;
-  width: 20vw;
-  min-width: 20vw;
-  min-height: 90vh;
+  width: 300px;
+  /* min-width: 20%; */
+  min-height: 705px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .8));
   background-position: center top;
   position: absolute;
@@ -79,7 +79,6 @@
 .profile-name{
   font-size: 30px;
   font-weight: 600;
-  /* display: inline-block; */
   color: rgb(248,205,70);
 }
 .profile-info{
@@ -92,7 +91,8 @@
 
 .my-legend{
   z-index: 100;
-  width: 80pw;
+  width: 80px;
+  position: relative;
 }
 .my-legend .legend-scale ul {
     margin: 0;
@@ -101,8 +101,8 @@
     float: left;
     list-style: none;
     position: absolute;
-    left: 450px;
-    bottom: 50px;
+    left: 100px;
+    bottom: 10px;
     }
   .my-legend .legend-scale ul li {
     font-size: 80%;
@@ -130,9 +130,9 @@
     }
 
 .right-side-container{
-  min-width: 60vw;
+  min-width: 870px;
   background-color: black;
-  min-height: 90ph;
+  min-height: 90vh;
   border-radius: 2%;
 }
 
@@ -140,7 +140,7 @@
 #chart-area{
   background: url("bball.png") no-repeat;
   background-size: auto;
-  width: 60vw;
+  width: 870px;
   background-color: black;
 }
 
