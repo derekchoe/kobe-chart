@@ -98,10 +98,10 @@ const kobeShot = () => {
       .on("mouseout", tip.hide)
       .merge(circles)
       .transition(t)
-      .attr("cy", function (d) { return (d.loc_y*1.74) + height * 0.1})
-      .attr("cx", function (d) { return (d.loc_x*1.74) + width * 0.44})
+      .attr("cy", function (d) { return (d.loc_y*1.74) + height * 0.1;})
+      .attr("cx", function (d) { return (d.loc_x*1.74) + width * 0.44;})
       .attr("opacity", "0.7")
-      .attr("r", 3)
+      .attr("r", 3);
   }
 }
 
