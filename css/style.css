@@ -1,7 +1,5 @@
 .background{
-  background: #0f2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #24243e, #151526, #1b1b2e);
-  background: linear-gradient(to right, #24243e, #151526, #1b1b2e); 
+  background: #151526; /* fallback for old browsers */
   font-family: helvetica;
   color: white;
 }
