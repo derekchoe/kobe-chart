@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="//rawgithub.com/Caged/d3-tip/master/examples/example-styles.css">
+        <script type="text/javascript" src="./data/shot-data.js"></script>
+        <title>Kobe's Shot Chart</title>
+    </head>
+    <body class="background">
+        <div class="container">
+            <nav class="nav__container">
+                <select class="nav-select">
+                    <option id="selected" selected value="all">Choose an Iconic Game</option>
+                    <option id="selected" value="3/28/03">55 vs Michael Jordan</option>
+                    <option id="selected" value="12/20/05">62 vs Dallas</option>
+                    <option id="selected" value="1/22/06">81-Point Game</option>
+                    <option id="selected" value="4/13/16">Last Game</option>
+                </select>
+                <div class="nav__bio">
+                    <span class="nav__bio-name">
+                        Kobe Bryant
+                    </span>
+                    <p class="nav__bio-quote">
+                        I would go 0-30 before I would go 0-9. 0-9 means you beat yourself, you psyched yourself out of the game
+                    </p>
+                </div>
+                <div class="nav__legend">
+                </div>
+            </nav>
+            <segment class='chart__container right-side-container'>
+                <div class="chart__holder"></div>
+            </segment>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="js/d3-tip.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="./js/shots1.js"></script>
+    </body>
+</html>
