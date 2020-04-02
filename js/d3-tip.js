@@ -251,7 +251,7 @@ d3.tip = function() {
 
   function getSVGNode(el) {
     el = el.node()
-    if(el.tagName.toLowerCase() === 'svg')
+    if( el && el.tagName.toLowerCase() === 'svg')
       return el
 
     return el.ownerSVGElement
