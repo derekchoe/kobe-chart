@@ -94,4 +94,4 @@ const kobeShot = () => {
     }
 };
 
-// kobeShot();
+kobeShot();
