@@ -1,6 +1,6 @@
 # Kobe Shot Chart
 
-[Live Link](https://kobeshot.herokuapp.com)
+[Live Link](https://kobe-shot-chart.herokuapp.com/)
 
 This project is a data visualization that was created using the D3 JavaScript Library. It charts all 26200 shots that Kobe Bryant took in his 20 year career with the Los Angeles Lakers.
 
